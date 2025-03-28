@@ -1,12 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
-import './blog.css';
-import Contact from "./contact"
+import './contact.css';
 
 
 function Navigation() {
     const location = useLocation();
 
-    return location.pathname !== "/blog" ? (
+    return location.pathname !== "/contact" ? (
         <nav className="nav">
             <Link to="/">Home</Link>
             <Link to="/shop" style={{ marginLeft: '60px' }}>Shop</Link>
@@ -28,7 +27,7 @@ function App() {
     );
 }
 
-function Blog() {
+function Contact() {
     return (
         <>
             <Navigation />
@@ -63,85 +62,41 @@ function Blog() {
                     <div className="hero">
                         <div className='hero_title'>
                             <img src="/src/images/Meubel.svg" alt="" />
-                            <h2>Blog</h2>
-                            <h5>Home <img src="src/images/vector.svg" alt="" /> Blog</h5>
+                            <h2>Contact</h2>
+                            <h5>Home <img src="src/images/vector.svg" alt="" /> Contact</h5>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="blog-section">
-                <div className="container">
-                    <div className="infor-box">
-                        <div className="inf-box">
-                            <img src="/src/images/inf1.svg" alt="" />
-                            <img src="/src/images/inf-btn.svg" alt="" className="inf-btn" /><br />
-                            <h2>Going all-in with millennial design</h2><br />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p><br />
-                            <h4>Read more</h4><br /><br /><br />
-                            <img src="/src/images/inf2.svg" alt="" />
-                            <img src="/src/images/inf-btn.svg" alt="" className="inf-btn" /><br />
-                            <h2>Exploring new ways of decorating</h2><br />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p><br />
-                            <h4>Read more</h4><br /><br /><br />
-                            <img src="/src/images/inf3.svg" alt="" />
-                            <img src="/src/images/inf-btn.svg" alt="" className="inf-btn" /><br />
-                            <h2>Handmade pieces that took time to make</h2><br />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p><br />
-                            <h4>Read more</h4><br /><br /><br />
-                        </div>
-                        <div className="categories-box">
-                            <form action="" className="form">
-                                <input type="text" id="srch-input" className="srch-inpt" />
-                                <label htmlFor="srch-input"><img src="/src/images/Search.svg" alt="" /></label>
-                            </form>
-                            <div className="categories"><br /><br />
-                                <h3>Categories</h3><br /><br /><br />
-                                <div className="p" >
-                                    <p>Crafts</p>
-                                    <p>2</p>
-                                </div><br /><br /> <div className="p" >
-                                    <p>Design</p>
-                                    <p>8</p>
-                                </div> <br /><br /><div className="p" >
-                                    <p>Handmade</p>
-                                    <p>7</p>
-                                </div><br /><br /> <div className="p" >
-                                    <p>Interior</p>
-                                    <p>1</p>
-                                </div> <br /><br /><div className="p" >
-                                    <p>Wood</p>
-                                    <p>6</p>
-                                </div>
-                            </div><br /><br /><br /><br />
-                            <div className="categories"><br /><br />
-                                <h3>Recent Posts</h3><br /><br /><br />
-                                <div className="p" >
-                                    <img src="/src/images/ab1.svg" alt="" />
-                                </div><br /><br /> <div className="p" >
-                                    <img src="/src/images/ab2.svg" alt="" />
 
-                                </div> <br /><br /><div className="p" >
-                                    <img src="/src/images/ab3.svg" alt="" />
+            <div className="contact-container">
+                <h2 className="contact-title">Get In Touch With Us</h2>
+                <p className="contact-subtitle">
+                    For more information about our products & services, please feel free to drop us <br /> an email.
+                    Our staff is always here to help you out. Do not hesitate!
+                </p><br /><br /><br /><br />
 
-                                </div><br /><br /> <div className="p" >
-                                    <img src="/src/images/ab4.svg" alt="" />
-
-                                </div> <br /><br /><div className="p" >
-                                    <img src="/src/images/ab5.svg" alt="" />
-
-                                </div>
-                            </div>
-                        </div>
+                <div className="contact-content">
+                    <div className="contact-info">
+                        <p><strong><img src="/src/images/map.svg" alt="" /> Address</strong><br /><br />36 5th SE Avenue, New <br />York NY10000, United <br />States</p><br /><br />
+                        <p><strong><img src="/src/images/tel.svg" alt="" /> Phone</strong><br /> <br />Mobile: (+64) 546-6789<br /> Hotline: (+64) 446-6789</p><br /><br />
+                        <p><strong><img src="/src/images/watch.svg" alt="" /> Working Time</strong><br /> <br />Monday - Friday: 10:00 - 22:00<br /> Saturday - Sunday: 8:00 - 21:00</p>
                     </div>
-                    <div className='btns_of_shop2'>
-                        <button className='page_btn1'>1</button>
-                        <button className='page_btn'>2</button>
-                        <button className='page_btn'>3</button>
-                        <button className='next_btn'>Next</button>
-                    </div>
+
+                    <form className="contact-form">
+                        <label htmlFor="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Abc" required /><br />
+                        <label htmlFor="email">Email address</label>
+                        <input type="email" id="email" placeholder="Abc@def.com" required /><br />
+                        <label htmlFor="sebject">Subject</label>
+                        <input type="text" placeholder="This is an optional" id="subject" /><br />
+                        <label htmlFor="message">Message</label>
+                        <textarea id="message" placeholder="Hi! i’d like to ask about" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
-            </section >
-            <section className="sec">
+            </div>
+            <section className="sect">
                 <div className="container">
                     <div className='about_shop'>
                         <div className='quality'>
@@ -223,4 +178,4 @@ function Blog() {
     )
 }
 
-export default Blog
+export default Contact

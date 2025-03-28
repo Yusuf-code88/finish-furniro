@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react
 import Shop from "./shop";
 import './App.css';
 import Blog from "./blog";
+import Contact from "./contact"
 
 
 function Navigation() {
@@ -9,10 +10,10 @@ function Navigation() {
 
   return location.pathname !== "/shop" ? (
     <nav className="nav">
-      <Link to="/" >Home</Link>
-      <Link to="/shop" style={{ marginLeft: '60px' }}>Shop</Link>
-      <Link to="/blog" style={{ marginLeft: '60px' }}>About</Link>
-      <Link to="/shop" style={{ marginLeft: '60px' }}>Contact</Link>
+      <Link to="/" style={{ listStyle: 'none', textDecoration: 'none', color: 'black' }} >Home</Link>
+      <Link to="/shop" style={{ marginLeft: '60px', listStyle: 'none', textDecoration: 'none', color: 'black' }}>Shop</Link>
+      <Link to="/blog" style={{ marginLeft: '60px', listStyle: 'none', textDecoration: 'none', color: 'black' }}>About</Link>
+      <Link to="/contact" style={{ marginLeft: '60px', listStyle: 'none', textDecoration: 'none', color: 'black' }}>Contact</Link>
     </nav>
   ) : null;
 }
@@ -23,7 +24,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/blog" element={<Blog />} />
-
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
@@ -98,64 +99,116 @@ function MainPage() {
 
             <div className='Products_to_sell'>
               <div className='products'>
-                <div className='about_Syltherine'>
-                  <img src="src/images/Syltherine.svg" alt="" />
-                  <h4>Syltherine</h4>
-                  <p>Stylish cafe chair</p>
-                  <div className='prices'>
+                <div className='about_Leviosa'>
+                  <div className="product-card">
+                    <img src="src/images/Syltherine.svg" alt="Leviosa" />
+                    <div className="overlay">
+                      <button>Add to cart</button>
+                      <img src="/src/images/share.svg" alt="" />
+                    </div>
+                    <h4>Syltherine</h4>
+                    <p>Stylish cafe chair</p>
+                    <div className='prices'>
+                      <h5>Rp 2.500.000</h5>
+                      <p>Rp 3.500.000</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='about_Leviosa'>
+                  <div className="product-card">
+                    <img src="src/images/lev.svg" alt="Leviosa" />
+                    <div className="overlay">
+                      <button>Add to cart</button>
+                      <img src="/src/images/share.svg" alt="" />
+                    </div>
+                    <h4>Leviosa</h4>
+                    <p>Stylish cafe chair</p>
                     <h5>Rp 2.500.000</h5>
-                    <p>Rp 3.500.000</p>
+                  </div>
+                </div>
+
+                <div className='about_Leviosa'>
+                  <div className="product-card">
+                    <img src="src/images/Lolito.svg" alt="Leviosa" />
+                    <div className="overlay">
+                      <button>Add to cart</button>
+                      <img src="/src/images/share.svg" alt="" />
+                    </div>
+                    <h4>Lolito</h4>
+                    <p>Luxury big sofa</p>
+                    <div className='prices'>
+                      <h5>Rp 7.000.000</h5>
+                      <p>Rp 14.000.000</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='about_Leviosa'>
+                  <div className="product-card">
+                    <img src="src/images/Respira.svg" alt="Leviosa" />
+                    <div className="overlay">
+                      <button>Add to cart</button>
+                      <img src="/src/images/share.svg" alt="" />
+                    </div>
+                    <h4>Respira</h4>
+                    <p>Outdoor bar table and stool</p>
+                    <h5>Rp 500.000</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div className='another_products'>
+                <div className='about_Leviosa'>
+                  <div className="product-card">
+                    <img src="src/images/Grifo.svg" alt="Leviosa" />
+                    <div className="overlay">
+                      <button>Add to cart</button>
+                      <img src="/src/images/share.svg" alt="" />
+                    </div>
+                    <h4>Grifo</h4>
+                    <p>Night lamp</p>
+                    <h5>Rp 1.500.000</h5>
                   </div>
                 </div>
                 <div className='about_Leviosa'>
-                  <img src="src/images/Syltherine.svg" alt="" />
-                  <h4>Leviosa</h4>
-                  <p>Stylish cafe chair</p>
-                  <h5>Rp 2.500.000</h5>
-                </div>
-                <div className='about_Lolito'>
-                  <img src="src/images/lolito.svg" alt="" />
-                  <h4>Lolito</h4>
-                  <p>Luxury big sofa</p>
-                  <div className='prices'>
-                    <h5>Rp 7.000.000</h5>
-                    <p>Rp 14.000.000</p>
+                  <div className="product-card">
+                    <img src="src/images/Muggo.svg" alt="Leviosa" />
+                    <div className="overlay">
+                      <button>Add to cart</button>
+                      <img src="/src/images/share.svg" alt="" />
+                    </div>
+                    <h4>Muggo</h4>
+                    <p>Small mug</p>
+                    <h5>Rp 150.000</h5>
                   </div>
                 </div>
-                <div className='about_Respira'>
-                  <img src="src/images/respira.svg" alt="" />
-                  <h4>Respira</h4>
-                  <p>Outdoor bar table and stool</p>
-                  <h5>Rp 500.000</h5>
-                </div>
-              </div>
-              <div className='another_products'>
-                <div className='about_grifo'>
-                  <img src="src/images/grifo.svg" alt="" />
-                  <h4>Grifo</h4>
-                  <p>Night lamp</p>
-                  <h5>Rp 1.500.000</h5>
-                </div>
-                <div className='about_grifo'>
-                  <img src="src/images/muggo.svg" alt="" />
-                  <h4>Muggo</h4>
-                  <p>Small mug</p>
-                  <h5>Rp 150.000</h5>
-                </div>
-                <div className='about_Syltherine'>
-                  <img src="src/images/pinckgy.svg" alt="" />
-                  <h4>Pingky</h4>
-                  <p>Cute bed set</p>
-                  <div className='prices'>
-                    <h5>Rp 7.000.000</h5>
-                    <p>Rp 14.000.000</p>
+                <div className='about_Leviosa'>
+                  <div className="product-card">
+                    <img src="src/images/pinckgy.svg" alt="Leviosa" />
+                    <div className="overlay">
+                      <button>Add to cart</button>
+                      <img src="/src/images/share.svg" alt="" />
+                    </div>
+                    <h4>Pingky</h4>
+                    <p>Cute bed set</p>
+                    <div className='prices'>
+                      <h5>Rp 7.000.000</h5>
+                      <p>Rp 14.000.000</p>
+                    </div>
                   </div>
                 </div>
-                <div className='about_grifo'>
-                  <img src="src/images/potty.svg" alt="" />
-                  <h4>Potty</h4>
-                  <p>Minimalist flower pot</p>
-                  <h5>Rp 500.000</h5>
+                <div className='about_Leviosa'>
+                  <div className="product-card">
+                    <img src="src/images/Potty.svg" alt="Leviosa" />
+                    <div className="overlay">
+                      <button>Add to cart</button>
+                      <img src="/src/images/share.svg" alt="" />
+                    </div>
+                    <h4>Potty</h4>
+                    <p>Minimalist flower pot</p>
+                    <h5>Rp 500.000</h5>
+                  </div>
                 </div>
               </div>
 
