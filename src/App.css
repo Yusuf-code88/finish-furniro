@@ -598,10 +598,11 @@
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+  overflow-x: hidden;
 }
 
 .nav Link {
@@ -670,4 +671,100 @@ body {
 
 .prices p {
   margin-top: 20px;
+}
+
+/* Затемнение фона */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+
+/* Корзина */
+.cart {
+  position: absolute;
+  top: 0;
+  right: -460px;
+  /* Скрыто по умолчанию */
+  width: 417px;
+  height: 746px;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 10;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.cart h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 287px;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 35px;
+}
+
+/* Открытое состояние */
+.cart.open {
+  right: 0;
+}
+
+/* Кнопка закрытия */
+.close-btn {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sub p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.text {
+  width: 417px;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 20px;
+}
+
+.bt button {
+  border: 1px solid #000000;
+  border-radius: 50px;
+  color: black;
+  background-color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  transition: all 0.3s ease-in-out;
+}
+
+.bt button:hover {
+  background-color: black;
+  color: white;
+}
+
+.bt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub {
+  margin-top: 520px;
 }

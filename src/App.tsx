@@ -1,9 +1,21 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 import Shop from "./shop";
 import './App.css';
 import Blog from "./blog";
 import Contact from "./contact"
+import Syltherine from "./Syltherine"
 
+
+function Logo() {
+  const location = useLocation();
+
+  return location.pathname !== "/ " ? (
+    <nav className="nav">
+      <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+    </nav>
+  ) : null;
+}
 
 function Navigation() {
   const location = useLocation();
@@ -25,36 +37,59 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Syltherine" element={<Syltherine />} />
       </Routes>
     </Router>
   );
 }
 
+
+
 function MainPage() {
+  const [cartOpen, setCartOpen] = useState(false);
   return (
     <>
       <header>
         <div className="container">
-          <nav className='navbar'>
-            <div className='headers'>
-              <div className='logo'>
-                <img src="src/images/Logo.svg" alt="" />
+          <nav className="navbar">
+            <div className="headers">
+              <div className="logo">
+                <Logo />
               </div>
-
-              <div className='connect_pages'>
+              <div className="connect_pages">
                 <Navigation />
               </div>
-
-              <div className='btns_of_header'>
+              <div className="btns_of_header">
                 <button><img src="src/images/blog.svg" alt="" /></button>
                 <button><img src="src/images/search.svg" alt="" /></button>
                 <button><img src="src/images/likes.svg" alt="" /></button>
-                <button><img src="src/images/shop.svg" alt="" /></button>
+                <button onClick={() => setCartOpen(true)}>
+                  <img src="src/images/shop.svg" alt="" />
+                </button>
               </div>
             </div>
           </nav>
         </div>
       </header>
+
+      {/* Затемнение фона */}
+      {cartOpen && <div className="overlay" onClick={() => setCartOpen(false)}></div>}
+
+      {/* Корзина (выезжающий блок) */}
+      <div className={`cart ${cartOpen ? "open" : ""}`}>
+        <button className="close-btn" onClick={() => setCartOpen(false)}><img src="src/images/x.svg" alt="" /></button>
+        <h2>Shopping Cart</h2>
+        <div className="sub">
+          <div className="text">
+            <p>Subtotal</p>
+          </div><br />
+          <div className="bt">
+            <button>Cart</button>
+            <button>Checkout</button>
+            <button>Comparison</button>
+          </div>
+        </div>
+      </div>
 
       <section className='hero_of_page'>
         <div className="container">
@@ -99,34 +134,39 @@ function MainPage() {
 
             <div className='Products_to_sell'>
               <div className='products'>
-                <div className='about_Leviosa'>
-                  <div className="product-card">
-                    <img src="src/images/Syltherine.svg" alt="Leviosa" />
-                    <div className="overlay">
-                      <button>Add to cart</button>
-                      <img src="/src/images/share.svg" alt="" />
-                    </div>
-                    <h4>Syltherine</h4>
-                    <p>Stylish cafe chair</p>
-                    <div className='prices'>
-                      <h5>Rp 2.500.000</h5>
-                      <p>Rp 3.500.000</p>
+                <Link to="/Syltherine" style={{ listStyle: 'none', textDecoration: 'none' }}>
+                  <div className='about_Leviosa'>
+                    <div className="product-card">
+                      <img src="src/images/Syltherine.svg" alt="Leviosa" />
+                      <div className="overlay">
+                        <button>Add to cart</button>
+                        <img src="/src/images/share.svg" alt="" />
+                      </div>
+                      <h4>Syltherine</h4>
+                      <p>Stylish cafe chair</p>
+                      <div className='prices'>
+                        <h5>Rp 2.500.000</h5>
+                        <p>Rp 3.500.000</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
 
-                <div className='about_Leviosa'>
-                  <div className="product-card">
-                    <img src="src/images/lev.svg" alt="Leviosa" />
-                    <div className="overlay">
-                      <button>Add to cart</button>
-                      <img src="/src/images/share.svg" alt="" />
+                <Link to="/Syltherine" style={{ listStyle: 'none', textDecoration: 'none' }}>
+                  <div className='about_Leviosa'>
+                    <div className="product-card">
+                      <img src="src/images/lev.svg" alt="Leviosa" />
+                      <div className="overlay">
+                        <button>Add to cart</button>
+                        <img src="/src/images/share.svg" alt="" />
+                      </div>
+                      <h4>Leviosa</h4>
+                      <p>Stylish cafe chair</p>
+                      <h5>Rp 2.500.000</h5>
                     </div>
-                    <h4>Leviosa</h4>
-                    <p>Stylish cafe chair</p>
-                    <h5>Rp 2.500.000</h5>
                   </div>
-                </div>
+                </Link>
+
 
                 <div className='about_Leviosa'>
                   <div className="product-card">
@@ -216,7 +256,7 @@ function MainPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       <section>
         <div className='beautiful_rooms'>

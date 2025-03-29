@@ -1,7 +1,17 @@
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import './shop.css';
 import Blog from "./blog";
 
+function Logo() {
+    const location = useLocation();
+
+    return location.pathname !== "/shop" ? (
+        <nav className="nav">
+            <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+        </nav>
+    ) : null;
+}
 
 function Navigation() {
     const location = useLocation();
@@ -28,6 +38,8 @@ function App() {
     );
 }
 function Shop() {
+    const [cartOpen, setCartOpen] = useState(false);
+
     return (
         <>
             <Navigation />
@@ -36,7 +48,7 @@ function Shop() {
                     <nav className='navbar'>
                         <div className='headers'>
                             <div className='logo'>
-                                <img src="src/images/Logo.svg" alt="" />
+                                <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
                             </div>
                             <div className='connect_pages'>
                                 <ul>
@@ -50,12 +62,32 @@ function Shop() {
                                 <button><img src="src/images/blog.svg" alt="" /></button>
                                 <button><img src="src/images/search.svg" alt="" /></button>
                                 <button><img src="src/images/likes.svg" alt="" /></button>
-                                <button><img src="src/images/shop.svg" alt="" /></button>
+                                <button onClick={() => setCartOpen(true)}>
+                                    <img src="src/images/shop.svg" alt="" />
+                                </button>
                             </div>
                         </div>
                     </nav>
                 </div>
             </header>
+
+            {cartOpen && <div className="overlay" onClick={() => setCartOpen(false)}></div>}
+
+            {/* Корзина (выезжающий блок) */}
+            <div className={`cart ${cartOpen ? "open" : ""}`}>
+                <button className="close-btn" onClick={() => setCartOpen(false)}><img src="src/images/x.svg" alt="" /></button>
+                <h2>Shopping Cart</h2>
+                <div className="sub">
+                    <div className="text">
+                        <p>Subtotal</p>
+                    </div><br />
+                    <div className="bt">
+                        <button>Cart</button>
+                        <button>Checkout</button>
+                        <button>Comparison</button>
+                    </div>
+                </div>
+            </div>
 
             <section className='hero_section'>
                 <div className="container">
