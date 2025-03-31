@@ -2,6 +2,8 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import './Syltherine.css';
 import Blog from "./blog";
+import Shop from "./shop";
+
 
 function Logo() {
     const location = useLocation();
@@ -12,6 +14,7 @@ function Logo() {
         </nav>
     ) : null;
 }
+<Logo />
 
 function Navigation() {
     const location = useLocation();
@@ -29,7 +32,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<MainPage />} />
+                <Route path="/" element={<App />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/blog" element={<Blog />} />
 
@@ -37,6 +40,7 @@ function App() {
         </Router>
     );
 }
+<App />
 function Leviosa() {
     const [cartOpen, setCartOpen] = useState(false);
     const [count, setCount] = useState(1);
