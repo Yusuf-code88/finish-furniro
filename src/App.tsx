@@ -166,11 +166,11 @@ function MainPage() {
                 <Navigation />
               </div>
               <div className="btns_of_header">
-                <button><img src="src/images/blog.svg" alt="" /></button>
-                <button><img src="src/images/search.svg" alt="" /></button>
-                <button><img src="src/images/likes.svg" alt="" /></button>
+                <button><img src="/images/blog.svg" alt="" /></button>
+                <button><img src="/images/search.svg" alt="" /></button>
+                <button><img src="/images/likes.svg" alt="" /></button>
                 <button onClick={() => setCartOpen(true)}>
-                  <img src="src/images/shop.svg" alt="" />
+                  <img src="/images/shop.svg" alt="" />
                   {cartItems.length > 0 && (
                     <span className="cart-count">{cartItems.length}</span>
                   )}
@@ -211,7 +211,7 @@ function MainPage() {
                     <p>{item.price}</p>
                   </div>
                   <button onClick={() => removeFromCart(index)} className="remove-item">
-                    <img src="src/images/x.svg" alt="Remove" />
+                    <img src="/images/x.svg" alt="Remove" />
                   </button>
                 </div>
               ))}
@@ -268,7 +268,7 @@ function MainPage() {
                                 image: product.image
                               });
                             }}>Add to cart</button>
-                            <img src="/src/images/share.svg" alt="" />
+                            <img src="/images/share.svg" alt="" />
                           </div>
                           <h4>{product.name}</h4>
                           <p>{product.description}</p>
@@ -301,7 +301,7 @@ function MainPage() {
                                 image: product.image
                               });
                             }}>Add to cart</button>
-                            <img src="/src/images/share.svg" alt="" />
+                            <img src="/images/share.svg" alt="" />
                           </div>
                           <h4>{product.name}</h4>
                           <p>{product.description}</p>
@@ -338,7 +338,7 @@ function MainPage() {
           <div className='pictures_of_rooms'>
 
             <div className='first_picture'>
-              <img src="src/images/bed_room.svg" alt="" />
+              <img src="/images/bed_room.svg" alt="" />
 
               <div className='recomandation'>
 
@@ -346,11 +346,11 @@ function MainPage() {
                   <p>01 - Bed Room</p>
                   <h4>Inner Peace</h4>
                 </div>
-                <button><img src="src/images/arrow.svg" alt="" /></button>
+                <button><img src="/images/arrow.svg" alt="" /></button>
               </div>
             </div>
             <div>
-              <img src="src/images/chairs.svg" alt="" />
+              <img src="/images/chairs.svg" alt="" />
               <div className='all_rounds'>
                 <div className='biggest_round'>
                   <div className="in_the_round"></div>
@@ -361,7 +361,7 @@ function MainPage() {
               </div>
             </div>
             <div className='small_pictures'>
-              <img src="src/images/smallimg.svg" alt="" />
+              <img src="/images/smallimg.svg" alt="" />
             </div>
           </div>
         </div>
@@ -378,27 +378,27 @@ function MainPage() {
 
             <div className='left_images'>
               <div className='books_and_laptop'>
-                <img src="src/images/books.svg" alt="" />
-                <img src="src/images/laptop.svg" alt="" />
+                <img src="/images/books.svg" alt="" />
+                <img src="/images/laptop.svg" alt="" />
               </div>
               <div className='knight_and_tables'>
-                <img src="src/images/knight.svg" alt="" />
-                <img src="src/images/tables.svg" alt="" />
+                <img src="/images/knight.svg" alt="" />
+                <img src="/images/tables.svg" alt="" />
               </div>
             </div>
 
             <div className='center_images'>
-              <img src="src/images/kitchen.svg" alt="" />
+              <img src="/images/kitchen.svg" alt="" />
             </div>
 
             <div className='right_images'>
               <div className='bed_and_kitchen'>
-                <img src="src/images/beds.svg" alt="" />
-                <img src="src/images/another_kitchen.svg" alt="" />
+                <img src="/images/beds.svg" alt="" />
+                <img src="/images/another_kitchen.svg" alt="" />
               </div>
               <div className='vase_and_wall'>
-                <img src="src/images/vase.svg" alt="" />
-                <img src="src/images/wall.svg" alt="" />
+                <img src="/images/vase.svg" alt="" />
+                <img src="/images/wall.svg" alt="" />
               </div>
             </div>
           </div>

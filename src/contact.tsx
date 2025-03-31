@@ -9,7 +9,7 @@ function Logo() {
 
     return location.pathname !== "/blog" ? (
         <nav className="nav">
-            <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+            <Link to="/"  ><img src="/images/Logo.svg" alt="" /></Link>
         </nav>
     ) : null;
 }
@@ -51,7 +51,7 @@ function Contact() {
                     <nav className='navbar'>
                         <div className='headers'>
                             <div className='logo'>
-                                <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+                                <Link to="/"  ><img src="/images/Logo.svg" alt="" /></Link>
                             </div>
                             <div className='connect_pages'>
                                 <ul>
@@ -62,9 +62,9 @@ function Contact() {
                                 </ul>
                             </div>
                             <div className='btns_of_header'>
-                                <button><img src="src/images/blog.svg" alt="" /></button>
-                                <button><img src="src/images/search.svg" alt="" /></button>
-                                <button><img src="src/images/likes.svg" alt="" /></button>
+                                <button><img src="/images/blog.svg" alt="" /></button>
+                                <button><img src="/images/search.svg" alt="" /></button>
+                                <button><img src="/images/likes.svg" alt="" /></button>
                                 <button onClick={() => setCartOpen(true)}>
                                     <img src="src/images/shop.svg" alt="" />
                                 </button>
@@ -96,9 +96,9 @@ function Contact() {
                 <div className="container">
                     <div className="hero">
                         <div className='hero_title'>
-                            <img src="/src/images/Meubel.svg" alt="" />
+                            <img src="/images/Meubel.svg" alt="" />
                             <h2>Contact</h2>
-                            <h5>Home <img src="src/images/vector.svg" alt="" /> Contact</h5>
+                            <h5>Home <img src="/images/vector.svg" alt="" /> Contact</h5>
                         </div>
                     </div>
                 </div>
@@ -113,9 +113,9 @@ function Contact() {
 
                 <div className="contact-content">
                     <div className="contact-info">
-                        <p><strong><img src="/src/images/map.svg" alt="" /> Address</strong><br /><br />36 5th SE Avenue, New <br />York NY10000, United <br />States</p><br /><br />
-                        <p><strong><img src="/src/images/tel.svg" alt="" /> Phone</strong><br /> <br />Mobile: (+64) 546-6789<br /> Hotline: (+64) 446-6789</p><br /><br />
-                        <p><strong><img src="/src/images/watch.svg" alt="" /> Working Time</strong><br /> <br />Monday - Friday: 10:00 - 22:00<br /> Saturday - Sunday: 8:00 - 21:00</p>
+                        <p><strong><img src="/images/map.svg" alt="" /> Address</strong><br /><br />36 5th SE Avenue, New <br />York NY10000, United <br />States</p><br /><br />
+                        <p><strong><img src="/images/tel.svg" alt="" /> Phone</strong><br /> <br />Mobile: (+64) 546-6789<br /> Hotline: (+64) 446-6789</p><br /><br />
+                        <p><strong><img src="/images/watch.svg" alt="" /> Working Time</strong><br /> <br />Monday - Friday: 10:00 - 22:00<br /> Saturday - Sunday: 8:00 - 21:00</p>
                     </div>
 
                     <form className="contact-form">
@@ -135,28 +135,28 @@ function Contact() {
                 <div className="container">
                     <div className='about_shop'>
                         <div className='quality'>
-                            <img src="src/images/trophy.svg" alt="" />
+                            <img src="/images/trophy.svg" alt="" />
                             <div>
                                 <h4>High Quality</h4>
                                 <p>crafted from top materials</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/true.svg" alt="" />
+                            <img src="/images/true.svg" alt="" />
                             <div>
                                 <h4>Warranty Protection</h4>
                                 <p>Over 2 years</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/shipping.svg" alt="" />
+                            <img src="/images/shipping.svg" alt="" />
                             <div>
                                 <h4>Free Shipping</h4>
                                 <p>Order over 150 $</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/operator.svg" alt="" />
+                            <img src="/images/operator.svg" alt="" />
                             <div>
                                 <h4>24 / 7 Support</h4>
                                 <p>Dedicated support</p>

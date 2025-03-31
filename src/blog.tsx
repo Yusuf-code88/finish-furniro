@@ -9,7 +9,7 @@ function Logo() {
 
     return location.pathname !== "/blog" ? (
         <nav className="nav">
-            <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+            <Link to="/"  ><img src="/images/Logo.svg" alt="" /></Link>
         </nav>
     ) : null;
 }
@@ -51,7 +51,7 @@ function Blog() {
                     <nav className='navbar'>
                         <div className='headers'>
                             <div className='logo'>
-                                <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+                                <Link to="/"  ><img src="/images/Logo.svg" alt="" /></Link>
                             </div>
                             <div className='connect_pages'>
                                 <ul>
@@ -62,9 +62,9 @@ function Blog() {
                                 </ul>
                             </div>
                             <div className='btns_of_header'>
-                                <button><img src="src/images/blog.svg" alt="" /></button>
-                                <button><img src="src/images/search.svg" alt="" /></button>
-                                <button><img src="src/images/likes.svg" alt="" /></button>
+                                <button><img src="/images/blog.svg" alt="" /></button>
+                                <button><img src="/images/search.svg" alt="" /></button>
+                                <button><img src="/images/likes.svg" alt="" /></button>
                                 <button onClick={() => setCartOpen(true)}>
                                     <img src="src/images/shop.svg" alt="" />
                                 </button>
@@ -98,7 +98,7 @@ function Blog() {
                         <div className='hero_title'>
                             <img src="/src/images/Meubel.svg" alt="" />
                             <h2>Blog</h2>
-                            <h5>Home <img src="src/images/vector.svg" alt="" /> Blog</h5>
+                            <h5>Home <img src="/images/vector.svg" alt="" /> Blog</h5>
                         </div>
                     </div>
                 </div>
@@ -107,18 +107,18 @@ function Blog() {
                 <div className="container">
                     <div className="infor-box">
                         <div className="inf-box">
-                            <img src="/src/images/inf1.svg" alt="" />
-                            <img src="/src/images/inf-btn.svg" alt="" className="inf-btn" /><br />
+                            <img src="/images/inf1.svg" alt="" />
+                            <img src="/images/inf-btn.svg" alt="" className="inf-btn" /><br />
                             <h2>Going all-in with millennial design</h2><br />
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p><br />
                             <h4>Read more</h4><br /><br /><br />
-                            <img src="/src/images/inf2.svg" alt="" />
-                            <img src="/src/images/inf-btn.svg" alt="" className="inf-btn" /><br />
+                            <img src="/images/inf2.svg" alt="" />
+                            <img src="/images/inf-btn.svg" alt="" className="inf-btn" /><br />
                             <h2>Exploring new ways of decorating</h2><br />
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p><br />
                             <h4>Read more</h4><br /><br /><br />
-                            <img src="/src/images/inf3.svg" alt="" />
-                            <img src="/src/images/inf-btn.svg" alt="" className="inf-btn" /><br />
+                            <img src="/images/inf3.svg" alt="" />
+                            <img src="/images/inf-btn.svg" alt="" className="inf-btn" /><br />
                             <h2>Handmade pieces that took time to make</h2><br />
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p><br />
                             <h4>Read more</h4><br /><br /><br />
@@ -126,7 +126,7 @@ function Blog() {
                         <div className="categories-box">
                             <form action="" className="form">
                                 <input type="text" id="srch-input" className="srch-inpt" />
-                                <label htmlFor="srch-input"><img src="/src/images/Search.svg" alt="" /></label>
+                                <label htmlFor="srch-input"><img src="/images/Search.svg" alt="" /></label>
                             </form>
                             <div className="categories"><br /><br />
                                 <h3>Categories</h3><br /><br /><br />
@@ -150,18 +150,18 @@ function Blog() {
                             <div className="categories"><br /><br />
                                 <h3>Recent Posts</h3><br /><br /><br />
                                 <div className="p" >
-                                    <img src="/src/images/ab1.svg" alt="" />
+                                    <img src="/images/ab1.svg" alt="" />
                                 </div><br /><br /> <div className="p" >
-                                    <img src="/src/images/ab2.svg" alt="" />
+                                    <img src="/images/ab2.svg" alt="" />
 
                                 </div> <br /><br /><div className="p" >
-                                    <img src="/src/images/ab3.svg" alt="" />
+                                    <img src="/images/ab3.svg" alt="" />
 
                                 </div><br /><br /> <div className="p" >
-                                    <img src="/src/images/ab4.svg" alt="" />
+                                    <img src="/images/ab4.svg" alt="" />
 
                                 </div> <br /><br /><div className="p" >
-                                    <img src="/src/images/ab5.svg" alt="" />
+                                    <img src="/images/ab5.svg" alt="" />
 
                                 </div>
                             </div>
@@ -179,28 +179,28 @@ function Blog() {
                 <div className="container">
                     <div className='about_shop'>
                         <div className='quality'>
-                            <img src="src/images/trophy.svg" alt="" />
+                            <img src="/images/trophy.svg" alt="" />
                             <div>
                                 <h4>High Quality</h4>
                                 <p>crafted from top materials</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/true.svg" alt="" />
+                            <img src="/images/true.svg" alt="" />
                             <div>
                                 <h4>Warranty Protection</h4>
                                 <p>Over 2 years</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/shipping.svg" alt="" />
+                            <img src="/images/shipping.svg" alt="" />
                             <div>
                                 <h4>Free Shipping</h4>
                                 <p>Order over 150 $</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/operator.svg" alt="" />
+                            <img src="/images/operator.svg" alt="" />
                             <div>
                                 <h4>24 / 7 Support</h4>
                                 <p>Dedicated support</p>

@@ -21,7 +21,7 @@ function Logo() {
 
     return location.pathname !== "/shop" ? (
         <nav className="nav">
-            <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+            <Link to="/"  ><img src="/images/Logo.svg" alt="" /></Link>
         </nav>
     ) : null;
 }
@@ -121,7 +121,7 @@ function Shop() {
                     <nav className='navbar'>
                         <div className='headers'>
                             <div className='logo'>
-                                <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+                                <Link to="/"  ><img src="/images/Logo.svg" alt="" /></Link>
                             </div>
                             <div className='connect_pages'>
                                 <ul>
@@ -132,11 +132,11 @@ function Shop() {
                                 </ul>
                             </div>
                             <div className='btns_of_header'>
-                                <button><img src="src/images/blog.svg" alt="" /></button>
-                                <button><img src="src/images/search.svg" alt="" /></button>
-                                <button><img src="src/images/likes.svg" alt="" /></button>
+                                <button><img src="/images/blog.svg" alt="" /></button>
+                                <button><img src="/images/search.svg" alt="" /></button>
+                                <button><img src="/images/likes.svg" alt="" /></button>
                                 <button onClick={() => setCartOpen(true)}>
-                                    <img src="src/images/shop.svg" alt="" />
+                                    <img src="/images/shop.svg" alt="" />
                                     {cartItems.length > 0 && (
                                         <span className="cart-count">{cartItems.length}</span>
                                     )}
@@ -150,7 +150,7 @@ function Shop() {
             {cartOpen && <div className="overlay" onClick={() => setCartOpen(false)}></div>}
 
             <div className={`cart ${cartOpen ? "open" : ""}`}>
-                <button className="close-btn" onClick={() => setCartOpen(false)}><img src="src/images/x.svg" alt="" /></button>
+                <button className="close-btn" onClick={() => setCartOpen(false)}><img src="/images/x.svg" alt="" /></button>
                 <h2>Shopping Cart</h2>
 
                 <div className="cart-content">
@@ -167,7 +167,7 @@ function Shop() {
                                             <p>{item.price}</p>
                                         </div>
                                         <button onClick={() => removeFromCart(index)} className="remove-item">
-                                            <img src="src/images/x.svg" alt="Remove" />
+                                            <img src="/images/x.svg" alt="Remove" />
                                         </button>
                                     </div>
                                 ))}
@@ -191,9 +191,9 @@ function Shop() {
             <section className='hero_section'>
                 <div className="container">
                     <div className='hero_title'>
-                        <img src="/src/images/Meubel.svg" alt="" />
+                        <img src="/images/Meubel.svg" alt="" />
                         <h2>Shop</h2>
-                        <h5>Home <img src="src/images/vector.svg" alt="" /> Shop</h5>
+                        <h5>Home <img src="/images/vector.svg" alt="" /> Shop</h5>
                     </div>
                 </div>
             </section>
@@ -219,7 +219,7 @@ function Shop() {
                                                             originalPrice: product.originalPrice
                                                         });
                                                     }}>Add to cart</button>
-                                                    <img src="/src/images/share.svg" alt="" />
+                                                    <img src="/images/share.svg" alt="" />
                                                 </div>
                                                 <h4>{product.name}</h4>
                                                 <p>{product.description}</p>
@@ -260,28 +260,28 @@ function Shop() {
                 <div className="container">
                     <div className='about_shop'>
                         <div className='quality'>
-                            <img src="src/images/trophy.svg" alt="" />
+                            <img src="/images/trophy.svg" alt="" />
                             <div>
                                 <h4>High Quality</h4>
                                 <p>crafted from top materials</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/true.svg" alt="" />
+                            <img src="/images/true.svg" alt="" />
                             <div>
                                 <h4>Warranty Protection</h4>
                                 <p>Over 2 years</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/shipping.svg" alt="" />
+                            <img src="/images/shipping.svg" alt="" />
                             <div>
                                 <h4>Free Shipping</h4>
                                 <p>Order over 150 $</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/operator.svg" alt="" />
+                            <img src="/images/operator.svg" alt="" />
                             <div>
                                 <h4>24 / 7 Support</h4>
                                 <p>Dedicated support</p>

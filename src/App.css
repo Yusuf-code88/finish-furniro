@@ -62,7 +62,7 @@
 }
 
 .hero_of_page {
-  background: url('src/images/hero_content.svg') no-repeat center center/cover;
+  background: url('/images/hero_content.svg') no-repeat center center/cover;
   height: 700px;
 }
 

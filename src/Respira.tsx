@@ -9,7 +9,7 @@ function Logo() {
 
     return location.pathname !== "/Leviosa" ? (
         <nav className="nav">
-            <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+            <Link to="/"  ><img src="/images/Logo.svg" alt="" /></Link>
         </nav>
     ) : null;
 }
@@ -52,7 +52,7 @@ function Respira() {
                     <nav className='navbar'>
                         <div className='headers'>
                             <div className='logo'>
-                                <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+                                <Link to="/"  ><img src="/images/Logo.svg" alt="" /></Link>
                             </div>
                             <div className='connect_pages'>
                                 <ul>
@@ -63,11 +63,11 @@ function Respira() {
                                 </ul>
                             </div>
                             <div className='btns_of_header'>
-                                <button><img src="src/images/blog.svg" alt="" /></button>
-                                <button><img src="src/images/search.svg" alt="" /></button>
-                                <button><img src="src/images/likes.svg" alt="" /></button>
+                                <button><img src="/images/blog.svg" alt="" /></button>
+                                <button><img src="/images/search.svg" alt="" /></button>
+                                <button><img src="/images/likes.svg" alt="" /></button>
                                 <button onClick={() => setCartOpen(true)}>
-                                    <img src="src/images/shop.svg" alt="" />
+                                    <img src="/images/shop.svg" alt="" />
                                 </button>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ function Respira() {
 
             {/* Корзина (выезжающий блок) */}
             <div className={`cart ${cartOpen ? "open" : ""}`}>
-                <button className="close-btn" onClick={() => setCartOpen(false)}><img src="src/images/x.svg" alt="" /></button>
+                <button className="close-btn" onClick={() => setCartOpen(false)}><img src="/images/x.svg" alt="" /></button>
                 <h2>Shopping Cart</h2>
                 <div className="sub">
                     <div className="text">
@@ -96,9 +96,9 @@ function Respira() {
             <div className="map">
                 <div className="container">
                     <div className="map-text">
-                        <img src="/src/images/home.svg" alt="" />
-                        <img src="/src/images/shopp.svg" alt="" />
-                        <img src="/src/images/pal.svg" alt="" />
+                        <img src="/images/home.svg" alt="" />
+                        <img src="/images/shopp.svg" alt="" />
+                        <img src="/images/pal.svg" alt="" />
                         <h4>Respira</h4>
                     </div>
                 </div>
@@ -109,13 +109,13 @@ function Respira() {
                     <div className="single">
                         <div className="photos">
                             <div className="photo1">
-                                <img src="/src/images/Respira.svg" alt="" />
-                                <img src="/src/images/Respira.svg" alt="" />
-                                <img src="/src/images/Respira.svg" alt="" />
-                                <img src="/src/images/Respira.svg" alt="" />
+                                <img src="/images/Respira.svg" alt="" />
+                                <img src="/images/Respira.svg" alt="" />
+                                <img src="/images/Respira.svg" alt="" />
+                                <img src="/images/Respira.svg" alt="" />
                             </div>
                             <div className="photo2">
-                                <img src="/src/images/Respira.svg" alt="" />
+                                <img src="/images/Respira.svg" alt="" />
 
                             </div>
                         </div>
@@ -123,18 +123,18 @@ function Respira() {
                             <h1>Respira</h1><br />
                             <h2>Rs. 250,000.00</h2><br />
                             <div className="rey">
-                                <img src="/src/images/rey.svg" alt="" />
-                                <img src="/src/images/pal.svg" alt="" />
-                                <img src="/src/images/rev.svg" alt="" />
+                                <img src="/images/rey.svg" alt="" />
+                                <img src="/images/pal.svg" alt="" />
+                                <img src="/images/rev.svg" alt="" />
                             </div><br />
                             <div className="ather-rey">
-                                <img src="/src/images/p.svg" alt="" /><br /><br />
-                                <img src="/src/images/size.svg" alt="" /><br /><br />
+                                <img src="/images/p.svg" alt="" /><br /><br />
+                                <img src="/images/size.svg" alt="" /><br /><br />
                                 <p>Color</p>
                                 <div className="circle" style={{ display: 'flex', gap: '8px', marginTop: '8px' }}>
-                                    <img src="/src/images/pur.svg" alt="" /><br /><br />
-                                    <img src="/src/images/blac.svg" alt="" /><br /><br />
-                                    <img src="/src/images/orange.svg" alt="" /><br /><br />
+                                    <img src="/images/pur.svg" alt="" /><br /><br />
+                                    <img src="/images/blac.svg" alt="" /><br /><br />
+                                    <img src="/images/orange.svg" alt="" /><br /><br />
                                 </div><br />
 
                                 <div className="btn-box">
@@ -153,9 +153,9 @@ function Respira() {
                                     <button className="Add">Add To Cart</button>
                                     <button className="Add">+ Compare</button>
                                 </div><br /><br />
-                                <img src="/src/images/lin.svg" alt="" /><br /><br /><br />
+                                <img src="/images/lin.svg" alt="" /><br /><br /><br />
                                 <div className="tag">
-                                    <img src="/src/images/tags.png" alt="" />
+                                    <img src="/images/tags.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@ function Respira() {
                 </div>
             </div>
             <div className="dis" style={{ display: 'flex', justifyContent: 'center', marginTop: '70px' }}>
-                <img src="/src/images/dis.svg" alt="" />
+                <img src="/images/dis.svg" alt="" />
             </div>
             <section>
                 <div className="container">
@@ -173,10 +173,10 @@ function Respira() {
                         <div className='products'>
                             <div className='about_Leviosa'>
                                 <div className="product-card">
-                                    <img src="src/images/Syltherine.svg" alt="Leviosa" />
+                                    <img src="/images/Syltherine.svg" alt="Leviosa" />
                                     <div className="overlay">
                                         <button>Add to cart</button>
-                                        <img src="/src/images/share.svg" alt="" />
+                                        <img src="/images/share.svg" alt="" />
                                     </div>
                                     <h4>Syltherine</h4>
                                     <p>Stylish cafe chair</p>
@@ -189,10 +189,10 @@ function Respira() {
 
                             <div className='about_Leviosa'>
                                 <div className="product-card">
-                                    <img src="src/images/lev.svg" alt="Leviosa" />
+                                    <img src="/images/lev.svg" alt="Leviosa" />
                                     <div className="overlay">
                                         <button>Add to cart</button>
-                                        <img src="/src/images/share.svg" alt="" />
+                                        <img src="/images/share.svg" alt="" />
                                     </div>
                                     <h4>Leviosa</h4>
                                     <p>Stylish cafe chair</p>
@@ -202,10 +202,10 @@ function Respira() {
 
                             <div className='about_Leviosa'>
                                 <div className="product-card">
-                                    <img src="src/images/Lolito.svg" alt="Leviosa" />
+                                    <img src="/images/Lolito.svg" alt="Leviosa" />
                                     <div className="overlay">
                                         <button>Add to cart</button>
-                                        <img src="/src/images/share.svg" alt="" />
+                                        <img src="/images/share.svg" alt="" />
                                     </div>
                                     <h4>Lolito</h4>
                                     <p>Luxury big sofa</p>
@@ -218,10 +218,10 @@ function Respira() {
 
                             <div className='about_Leviosa'>
                                 <div className="product-card">
-                                    <img src="src/images/Respira.svg" alt="Leviosa" />
+                                    <img src="/images/Respira.svg" alt="Leviosa" />
                                     <div className="overlay">
                                         <button>Add to cart</button>
-                                        <img src="/src/images/share.svg" alt="" />
+                                        <img src="/images/share.svg" alt="" />
                                     </div>
                                     <h4>Respira</h4>
                                     <p>Outdoor bar table and stool</p>

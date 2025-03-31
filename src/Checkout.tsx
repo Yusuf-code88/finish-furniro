@@ -60,7 +60,7 @@ function Checkout() {
                     <nav className='navbar'>
                         <div className='headers'>
                             <div className='logo'>
-                                <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+                                <Link to="/"  ><img src="/images/Logo.svg" alt="" /></Link>
                             </div>
                             <div className='connect_pages'>
                                 <ul>
@@ -71,11 +71,11 @@ function Checkout() {
                                 </ul>
                             </div>
                             <div className='btns_of_header'>
-                                <button><img src="src/images/blog.svg" alt="" /></button>
-                                <button><img src="src/images/search.svg" alt="" /></button>
-                                <button><img src="src/images/likes.svg" alt="" /></button>
+                                <button><img src="/images/blog.svg" alt="" /></button>
+                                <button><img src="/images/search.svg" alt="" /></button>
+                                <button><img src="/images/likes.svg" alt="" /></button>
                                 <button onClick={() => setCartOpen(true)}>
-                                    <img src="src/images/shop.svg" alt="" />
+                                    <img src="/images/shop.svg" alt="" />
                                 </button>
                             </div>
                         </div>
@@ -87,7 +87,7 @@ function Checkout() {
 
             {/* Корзина (выезжающий блок) */}
             <div className={`cart ${cartOpen ? "open" : ""}`}>
-                <button className="close-btn" onClick={() => setCartOpen(false)}><img src="src/images/x.svg" alt="" /></button>
+                <button className="close-btn" onClick={() => setCartOpen(false)}><img src="/images/x.svg" alt="" /></button>
                 <h2>Shopping Cart</h2>
                 <div className="sub">
                     <div className="text">
@@ -105,9 +105,9 @@ function Checkout() {
                 <div className="container">
                     <div className="hero">
                         <div className='hero_title'>
-                            <img src="/src/images/Meubel.svg" alt="" />
+                            <img src="/images/Meubel.svg" alt="" />
                             <h2>Checkout</h2>
-                            <h5>Home <img src="src/images/vector.svg" alt="" /> Checkout</h5>
+                            <h5>Home <img src="/images/vector.svg" alt="" /> Checkout</h5>
                         </div>
                     </div>
                 </div>
@@ -203,10 +203,10 @@ function Checkout() {
                                     <h5>Rs. 250,000.00l</h5>
                                 </div>
                             </div><br />
-                            <img src="/src/images/direct.svg" alt="" /><br /><br />
-                            <img src="/src/images/dir.svg" alt="" /><br />
-                            <img src="/src/images/cash.svg" alt="" /><br /><br />
-                            <img src="/src/images/your.svg" alt="" /><br />
+                            <img src="/images/direct.svg" alt="" /><br /><br />
+                            <img src="/images/dir.svg" alt="" /><br />
+                            <img src="/images/cash.svg" alt="" /><br /><br />
+                            <img src="/images/your.svg" alt="" /><br />
                             <button className="place">Place order</button>
                         </div>
                     </div>
@@ -217,28 +217,28 @@ function Checkout() {
                 <div className="container">
                     <div className='about_shop'>
                         <div className='quality'>
-                            <img src="src/images/trophy.svg" alt="" />
+                            <img src="/images/trophy.svg" alt="" />
                             <div>
                                 <h4>High Quality</h4>
                                 <p>crafted from top materials</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/true.svg" alt="" />
+                            <img src="/images/true.svg" alt="" />
                             <div>
                                 <h4>Warranty Protection</h4>
                                 <p>Over 2 years</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/shipping.svg" alt="" />
+                            <img src="/images/shipping.svg" alt="" />
                             <div>
                                 <h4>Free Shipping</h4>
                                 <p>Order over 150 $</p>
                             </div>
                         </div>
                         <div className='quality'>
-                            <img src="src/images/operator.svg" alt="" />
+                            <img src="/images/operator.svg" alt="" />
                             <div>
                                 <h4>24 / 7 Support</h4>
                                 <p>Dedicated support</p>
