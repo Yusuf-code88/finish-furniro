@@ -28,7 +28,7 @@ function Logo() {
 
   return location.pathname !== "/ " ? (
     <nav className="nav">
-      <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
+      <Link to="/"  ><img src="/images/Logo.svg" alt="" /></Link>
     </nav>
   ) : null;
 }
