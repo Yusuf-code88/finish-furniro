@@ -25,6 +25,7 @@ function Logo() {
         </nav>
     ) : null;
 }
+<Logo />
 
 function Navigation() {
     const location = useLocation();
@@ -43,7 +44,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<MainPage />} />
+                <Route path="/" element={<App />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/Syltherine" element={<Syltherine />} />
@@ -55,7 +56,7 @@ function App() {
         </Router>
     );
 }
-
+<App />
 function Shop() {
     const [cartOpen, setCartOpen] = useState(false);
     const [cartItems, setCartItems] = useState<CartItem[]>([]);

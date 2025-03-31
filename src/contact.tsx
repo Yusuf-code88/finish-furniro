@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-
+import Shop from "./shop.tsx"
+import Blog from "./blog";
 import './contact.css';
 
 function Logo() {
@@ -13,7 +14,7 @@ function Logo() {
     ) : null;
 }
 
-
+<Logo />
 function Navigation() {
     const location = useLocation();
 
@@ -30,14 +31,14 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<App />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/about" element={<Blog />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
     );
-}
+} <App />
 
 function Contact() {
     const [cartOpen, setCartOpen] = useState(false);

@@ -1,5 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import Blog from "./blog";
+import Contact from "./contact"
+import Shop from "./shop.tsx"
+
 
 import './contact.css';
 
@@ -8,11 +12,12 @@ function Logo() {
 
     return location.pathname !== "/blog" ? (
         <nav className="nav">
-            <Link to="/"  ><img src="src/images/Logo.svg" alt="" /></Link>
-        </nav>
+            <Link to="/">  <img src="/images/Logo.svg" alt="" />
+            </Link>
+        </nav >
     ) : null;
 }
-
+<Logo />
 
 function Navigation() {
     const location = useLocation();
@@ -30,7 +35,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<App />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/about" element={<Blog />} />
                 <Route path="/contact" element={<Contact />} />
@@ -38,6 +43,8 @@ function App() {
         </Router>
     );
 }
+<App />
+
 
 const countries = ["USA", "RUSSIAN", "GERMANY", "FRANCE", "CHINA"];
 
@@ -194,7 +201,7 @@ function Checkout() {
                                     <h3>Rs. 250,000.00</h3>
                                     <h4>Rs. 250,000.00</h4>
                                     <h5>Rs. 250,000.00l</h5>
-                                    </div>
+                                </div>
                             </div><br />
                             <img src="/src/images/direct.svg" alt="" /><br /><br />
                             <img src="/src/images/dir.svg" alt="" /><br />
