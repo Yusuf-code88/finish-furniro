@@ -121,3 +121,147 @@
     width: 100%;
     background-color: #FAF3EA;
 }
+
+.check-section {
+    margin-top: 60px;
+}
+
+.checks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checks h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.check-inptn {
+    display: flex;
+    gap: 30px;
+}
+
+form label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.check-inptn input {
+    width: 211px;
+    height: 75px;
+    top: 650px;
+    left: 176px;
+    border-width: 1px;
+    border-radius: 10px;
+    border: 1px solid #9F9F9F
+}
+
+.check1 {
+    gap: 30px;
+}
+
+.check1 h1 {
+    margin-bottom: 40px;
+}
+
+.checks1 input {
+    width: 453px;
+    height: 75px;
+    top: 807px;
+    left: 176px;
+    border-width: 1px;
+    border-radius: 10px;
+    border: 1px solid #9F9F9F;
+    padding-left: 30px;
+
+}
+
+select {
+    width: 453px;
+    height: 75px;
+    top: 807px;
+    left: 176px;
+    border-width: 1px;
+    border-radius: 10px;
+    border: 1px solid #9F9F9F;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.ch-t-1 h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #9F9F9F;
+    margin-top: 30px;
+}
+
+.ch-t-2 h3 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 30px;
+}
+
+.ch-t-2 h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 30px;
+}
+
+.ch-t-1 h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 30px;
+}
+
+.ch-t-2 h5 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #B88E2F;
+    margin-top: 30px;
+
+}
+
+.check-text {
+    border-bottom: 1px solid #D9D9D9;
+padding-bottom: 30px;
+}
+
+.place {
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+width: 318px;
+height: 64px;
+top: 1118px;
+left: 883px;
+border-width: 1px;
+border-radius: 15px;
+background-color: white;
+margin-left: 120px;
+margin-top: 40px;
+}
