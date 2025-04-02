@@ -80,7 +80,7 @@ function MainPage() {
       description: "Stylish cafe chair",
       price: "Rp 2.500.000",
       originalPrice: "Rp 3.500.000",
-      image: "src/images/Syltherine.svg",
+      image: "/images/Syltherine.svg",
       link: "/Syltherine"
     },
     {
@@ -88,7 +88,7 @@ function MainPage() {
       name: "Leviosa",
       description: "Stylish cafe chair",
       price: "Rp 2.500.000",
-      image: "src/images/lev.svg",
+      image: "/images/lev.svg",
       link: "/Leviosa"
     },
     {
@@ -97,7 +97,7 @@ function MainPage() {
       description: "Luxury big sofa",
       price: "Rp 7.000.000",
       originalPrice: "Rp 14.000.000",
-      image: "src/images/Lolito.svg",
+      image: "/images/Lolito.svg",
       link: "/Lolito"
     },
     {
@@ -105,7 +105,7 @@ function MainPage() {
       name: "Respira",
       description: "Outdoor bar table and stool",
       price: "Rp 500.000",
-      image: "src/images/Respira.svg",
+      image: "/images/Respira.svg",
       link: "/Respira"
     },
     {
@@ -113,7 +113,7 @@ function MainPage() {
       name: "Grifo",
       description: "Night lamp",
       price: "Rp 1.500.000",
-      image: "src/images/Grifo.svg",
+      image: "/images/Grifo.svg",
       link: "/Grifo"
     },
     {
@@ -121,7 +121,7 @@ function MainPage() {
       name: "Muggo",
       description: "Small mug",
       price: "Rp 150.000",
-      image: "src/images/Muggo.svg",
+      image: "/images/Muggo.svg",
       link: "/Muggo"
     },
     {
@@ -130,7 +130,7 @@ function MainPage() {
       description: "Cute bed set",
       price: "Rp 7.000.000",
       originalPrice: "Rp 14.000.000",
-      image: "src/images/pinckgy.svg",
+      image: "/images/pinckgy.svg",
       link: "/Pingky"
     },
     {
@@ -138,7 +138,7 @@ function MainPage() {
       name: "Potty",
       description: "Minimalist flower pot",
       price: "Rp 500.000",
-      image: "src/images/Potty.svg",
+      image: "/images/Potty.svg",
       link: "/Potty"
     }
   ];
@@ -195,7 +195,7 @@ function MainPage() {
 
       {/* Корзина (выезжающий блок) */}
       <div className={`cart ${cartOpen ? "open" : ""}`}>
-        <button className="close-btn" onClick={() => setCartOpen(false)}><img src="src/images/x.svg" alt="" /></button>
+        <button className="close-btn" onClick={() => setCartOpen(false)}><img src="/images/x.svg" alt="" /></button>
         <h2>Shopping Cart</h2>
 
         <div className="cart-items">

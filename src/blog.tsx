@@ -78,7 +78,7 @@ function Blog() {
 
             {/* Корзина (выезжающий блок) */}
             <div className={`cart ${cartOpen ? "open" : ""}`}>
-                <button className="close-btn" onClick={() => setCartOpen(false)}><img src="src/images/x.svg" alt="" /></button>
+                <button className="close-btn" onClick={() => setCartOpen(false)}><img src="/images/x.svg" alt="" /></button>
                 <h2>Shopping Cart</h2>
                 <div className="sub">
                     <div className="text">
@@ -96,7 +96,7 @@ function Blog() {
                 <div className="container">
                     <div className="hero">
                         <div className='hero_title'>
-                            <img src="/src/images/Meubel.svg" alt="" />
+                            <img src="/images/Meubel.svg" alt="" />
                             <h2>Blog</h2>
                             <h5>Home <img src="/images/vector.svg" alt="" /> Blog</h5>
                         </div>
