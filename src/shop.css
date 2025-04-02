@@ -66,6 +66,11 @@
     width: 100%;
 }
 
+.container {
+    overflow-x: hidden;
+  }
+  
+
 .hero_title {
     padding-top: 130px;
     display: flex;

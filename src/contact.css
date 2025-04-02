@@ -27,6 +27,11 @@
     align-items: flex-start;
 }
 
+.container {
+    overflow-x: hidden;
+  }
+  
+
 .contact-info {
     width: 40%;
     text-align: left;
