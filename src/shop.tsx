@@ -76,7 +76,7 @@ function Shop() {
             name: "Leviosa",
             description: "Stylish cafe chair",
             price: "Rp 2.500.000",
-            image: "sr/images/lev.svg",
+            image: "/images/lev.svg",
             link: "/Leviosa"
         },
         {
