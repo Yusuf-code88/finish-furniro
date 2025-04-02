@@ -68,7 +68,7 @@ function Shop() {
             description: "Stylish cafe chair",
             price: "Rp 2.500.000",
             originalPrice: "Rp 3.500.000",
-            image: "src/images/Syltherine.svg",
+            image: "/images/Syltherine.svg",
             link: "/Syltherine"
         },
         {
@@ -76,7 +76,7 @@ function Shop() {
             name: "Leviosa",
             description: "Stylish cafe chair",
             price: "Rp 2.500.000",
-            image: "src/images/lev.svg",
+            image: "sr/images/lev.svg",
             link: "/Leviosa"
         },
         {
@@ -85,7 +85,7 @@ function Shop() {
             description: "Luxury big sofa",
             price: "Rp 7.000.000",
             originalPrice: "Rp 14.000.000",
-            image: "src/images/Lolito.svg",
+            image: "/images/Lolito.svg",
             link: "/Lolito"
         },
         {
@@ -93,7 +93,7 @@ function Shop() {
             name: "Respira",
             description: "Outdoor bar table and stool",
             price: "Rp 500.000",
-            image: "src/images/Respira.svg",
+            image: "/images/Respira.svg",
             link: "/Respira"
         }
     ];
